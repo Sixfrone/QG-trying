@@ -1,0 +1,21 @@
+主要构成
+try:
+    value = 8 / 0
+    print(value)
+except:
+    print('error')
+else:
+    print(no error)
+finally:
+    print('1')
+
+出错才执行except,finally是不论错误与否都运行
+
+**可以指定错误类型
+eg.
+try:
+   value = 8 / b
+except ZeroDivisionError:
+    print('ZeroDivisionError')
+except NameError:
+    print('NameError')
