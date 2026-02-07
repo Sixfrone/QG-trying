@@ -1,0 +1,25 @@
+class Sturdent:
+    def _init_(self,a,b,c,d)
+        self.name = a
+        self.sex = b
+        self.age = c
+        self.height = d
+    def listen(self)
+        print('听课')
+    def write(self)
+        print('写作业')
+
+stu1 = Sturdent('张三','男',16,167)
+print(stu1.name)
+stu1.listen()   //self参数不用传
+属性可以修改 后面覆盖前面 还可以添加shuxing
+**********************************************继承
+1.先定义了一个类A
+2.class B(A):
+
+多重继承
+class B(A,C):
+(以前类优先  如果前面没有才去找后面的)
+**********************************************多态
+同一个接口面对不同的对象的时候有不同的处理方法
+    在类和对象里就是一个父类有多个不同子类
